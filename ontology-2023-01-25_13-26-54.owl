@@ -1,0 +1,41 @@
+Prefix(:=<http://snomed.info/id/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+
+Ontology(<http://snomed.info/sct/900000000000207008>
+<http://snomed.info/sct/900000000000207008/version/20230125>
+
+Declaration(Class(:448879004))
+Declaration(Class(:449081005))
+Declaration(Class(:450828004))
+Declaration(Class(:450829007))
+Declaration(AnnotationProperty(skos:prefLabel))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://snomed.info/id/450828004> (Latin American Spanish language reference set (foundation metadata concept))
+
+AnnotationAssertion(rdfs:label :450828004 "Latin American Spanish language reference set (foundation metadata concept)"@en-us)
+AnnotationAssertion(rdfs:label :450828004 "conjunto de referencias de lenguaje castellano para América Latina (metadato fundacional)"@es)
+AnnotationAssertion(skos:prefLabel :450828004 "Latin American Spanish language reference set"@en-us)
+AnnotationAssertion(skos:prefLabel :450828004 "conjunto de referencias de lenguaje castellano para América Latina"@es)
+SubClassOf(:450828004 :448879004)
+
+# Class: <http://snomed.info/id/450829007> (Latin American Spanish extension module (core metadata concept))
+
+AnnotationAssertion(rdfs:label :450829007 "Latin American Spanish extension module (core metadata concept)"@en-us)
+AnnotationAssertion(rdfs:label :450829007 "módulo de la extensión de la lengua castellana para Latinoamérica (metadato del núcleo)"@es)
+AnnotationAssertion(skos:prefLabel :450829007 "Latin American Spanish extension module"@en-us)
+AnnotationAssertion(skos:prefLabel :450829007 "módulo de la extensión de la lengua castellana para Latinoamérica"@es)
+SubClassOf(:450829007 :449081005)
+
+
+)
